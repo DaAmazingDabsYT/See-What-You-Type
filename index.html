@@ -1,0 +1,38 @@
+<html>
+        <body><html>
+<head>
+</head>
+<body>
+<center>
+<div>
+<h1>See what you type</h1>
+<textarea id="input" oninput="input()"></textarea>
+<h2>Your Input:</h2>
+<p id="output">
+Input shows here once you type.
+</p>
+</div>
+</center>
+</body>
+</html></body>
+        <style>textarea{
+    width:300px;
+    height:200px;
+}
+div{
+    width:500px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    background-color:white;
+    margin-top:90px;
+    border-radius:5px;
+}
+body{
+    background-color:blue;
+}</style>
+        <script>function input(){
+let userInput=document.querySelector("#input").value
+document.querySelector("#output").innerHTML=userInput
+}</script>
+      </html>
